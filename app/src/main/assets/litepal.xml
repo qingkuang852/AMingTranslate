@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="transRecord" ></dbname>
+
+    <version value="13" ></version>
+
+    <list>
+        <mapping class="com.aming.translate.db.TranslateRecord"></mapping>
+        <mapping class="com.aming.translate.db.Favorite"></mapping>
+    </list>
+
+</litepal>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#a45279"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:transitionName="record"
+        android:id="@+id/data_layout"
+        android:background="#c8715b"
+        android:layout_below="@id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/to_record_page"
+            android:gravity="center"
+            android:text="历史记录"
+            android:textSize="20sp"
+            android:textColor="#e2d77b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

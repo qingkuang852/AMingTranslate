@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darkRed"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_query_input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <EditText
+            android:id="@+id/et_input"
+            android:textColorHint="#d5ba5c"
+            android:hint="输入翻译内容"
+            android:textColor="#ffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <com.aming.translate.view.view.QueryAnimateView
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/queryView"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <View
+        android:transitionName="record"
+        android:id="@+id/data_layout"
+        android:layout_below="@id/input_layout"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </View>
+    <TextView
+        android:layout_below="@id/input_layout"
+        android:id="@+id/to_record_page"
+        android:gravity="center"
+        android:text="我的收藏"
+        android:textSize="20sp"
+        android:textColor="#e2d77b"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/show_layout"
+        android:layout_below="@id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/result_tip"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:text="结果显示"
+            android:textColor="#e2d77b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginBottom="55dp"
+            android:id="@+id/tv_show_result"
+            android:textSize="20sp"
+            android:textColor="@color/yellowText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_add_to_favorite"
+        android:layout_marginBottom="-55dp"
+        android:textColor="#e2d77b"
+        android:background="@drawable/bg_add_to_favorite"
+        android:text="添加收藏"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+</RelativeLayout>
